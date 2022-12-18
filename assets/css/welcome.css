@@ -16,6 +16,7 @@
     padding: 10px 30px 0px 30px;
 }
 
-.confirmacao {
-    padding-bottom: 50px;
+.text__container {
+    justify-content: flex-start;
+    gap: 24px;
 }

@@ -39,7 +39,7 @@ main {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: -1px;
-    height: 85vh;
+    height: 80vh;
     border-radius: 0 0 50px 50px;
     background-color: #fbfbfbc5;
 }
@@ -90,7 +90,7 @@ main {
     display: flex;
     justify-content: center;
     height: 12%;
-    width: 50%;
+    width: 52%;
     margin-bottom: 20px;
     background: url(../img/buzz-icon.png);
     background-repeat: no-repeat;
