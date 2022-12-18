@@ -41,7 +41,7 @@ main {
     margin-top: -1px;
     height: 85vh;
     border-radius: 0 0 50px 50px;
-    background-color: #fbfbfbb0;
+    background-color: #fbfbfbc5;
 }
 
 .text__container {
@@ -58,7 +58,7 @@ main {
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 40px;
+    padding: 50px;
 }
 
 .confirmacao__container {
@@ -80,7 +80,7 @@ main {
     font-size: 1.7rem;
     text-transform: uppercase;
     color: var(--white);
-    font-weight: 600;
+    font-weight: 700;
     padding: 10px;
     border-radius: 80px;
     background-color: var(--blue);
@@ -90,7 +90,7 @@ main {
     display: flex;
     justify-content: center;
     height: 12%;
-    width: 40%;
+    width: 50%;
     margin-bottom: 20px;
     background: url(../img/buzz-icon.png);
     background-repeat: no-repeat;
