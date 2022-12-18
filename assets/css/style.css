@@ -1,0 +1,97 @@
+main {
+    background-color: var(--bg-color);
+    height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.linhas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100vw;
+    padding-top: 100px;
+}
+
+.green,
+.purple,
+.white {
+    width: 100%;
+    height: 15px;
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+.white {
+    background-color: var(--white);
+}
+
+.content__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: -3px;
+    border-radius: 0 0 80px 80px;
+    background-color: #fbfbfbc4;
+}
+
+.text__container {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--bg-color);
+    text-align: center;
+}
+
+.apresentacao {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.confirmacao__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.confirmacao {
+    font-size: 2.8rem;
+}
+
+.enter {
+    width: 80%;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 80px;
+    background-color: var(--blue);
+}
+
+.footer__img {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 40%;
+    margin-bottom: 20px;
+    background: url(../img/buzz-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
