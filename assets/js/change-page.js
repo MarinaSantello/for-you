@@ -4,4 +4,4 @@ const changePage = function() {
     window.location.href = '../pages/question.html'
 }
 
-setInterval(changePage, 8000)
+setInterval(changePage, 10000)
