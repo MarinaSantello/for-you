@@ -1,5 +1,7 @@
 'use strict'
 
+import { question03 } from "./03.js"
+
 const handlekeypress02 = (event) => {
     if (event.key == 'Enter') {
         const inputNameFilm = document.getElementById('input_data')
@@ -7,12 +9,12 @@ const handlekeypress02 = (event) => {
         const nameReal = inputNameFilm.name
 
         if (nameInput.includes(nameReal)) {
-            console.log('certin')
+            question03()
         }
         else{
-            alert('não acertou tudo? que decepção...')
+            alert('essa é tão fácil, amor...')
 
-            window.location.reload(true)
+            inputNameFilm.value = ''
         }
     }
 
@@ -23,7 +25,7 @@ const question02 = function() {
     numQuestion.textContent = '2'
 
     const pergunta = document.getElementById('pergunta')
-    pergunta.textContent = 'um filme de qualidade duvidosa'
+    pergunta.textContent = 'um filme de qualidade incrivelmente duvidosa...'
 
     const respostas = document.getElementById('resposta')
 
