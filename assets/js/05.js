@@ -32,17 +32,19 @@ const question05 = function() {
     alternativas.classList.add('alternativas__container')
 
     alternativasJSON.forEach(element => {
-        const alternativa = document.createElement('div')
-        alternativa.classList.add('alternativa')
-        alternativa.id = `alternativa_${element.id}`
+        if (element.id != '04') {
+            const alternativa = document.createElement('div')
+            alternativa.classList.add('alternativa')
+            alternativa.id = `alternativa_${element.id}`
 
-        const text = document.createElement('label')
-        text.classList.add('text__alternativa')
-        text.textContent = element.alternativa
+            const text = document.createElement('label')
+            text.classList.add('text__alternativa')
+            text.textContent = element.alternativa
 
-        alternativa.appendChild(text)
+            alternativa.appendChild(text)
 
-        alternativas.appendChild(alternativa)
+            alternativas.appendChild(alternativa)
+        }
     })
 
     const statusRamones = window.localStorage.getItem('ramones')

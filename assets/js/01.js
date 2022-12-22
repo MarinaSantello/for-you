@@ -35,10 +35,10 @@ const filmesJSON = [
         nome: 'Space Jam: O Jogo do Século',
         ordem: '10'
     },
-    // {
-    //     nome: 'O Iluminado',
-    //     ordem: '9'
-    // },
+    {
+        nome: 'O Iluminado',
+        ordem: '9'
+    },
     {
         nome: 'Minority Report: A Nova Lei',
         ordem: '7'

@@ -35,6 +35,9 @@ const question02 = function() {
     inputData.type = 'text'
     inputData.name = 'chapeuzinho'
 
+    inputData.style.width = '100%'
+    inputData.style.height = '30px'
+
     const inputsQ01 = document.getElementById('inputs_container')
     
     respostas.replaceChild(inputData, inputsQ01)

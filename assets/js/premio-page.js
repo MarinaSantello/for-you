@@ -35,7 +35,7 @@ const newOrder = function() {
 
     const imgPolaroid = document.getElementById('premio_container').style
     imgPolaroid.height = '210px'
-    imgPolaroid.width = '240px'
+    imgPolaroid.width = '220px'
     imgPolaroid.background = `url(${alternativasJSON[0].img})`
     imgPolaroid.backgroundSize = 'cover'
     imgPolaroid.backgroundPosition = 'center'
@@ -48,6 +48,9 @@ const myChem = function() {
 
     const premioContainer = document.getElementById('premio_container')
 
+    const buttonContainer = document.createElement('div')
+    buttonContainer.classList.add('button__container')
+
     const linkGetPremio = document.createElement('a')
     const buttonGetPremio = document.createElement('button')
     buttonGetPremio.textContent = alternativasJSON[1].buttonText
@@ -59,16 +62,29 @@ const myChem = function() {
     const statusFones = window.localStorage.getItem('fones')
     
     if (statusFones == 'desativado') {
+
+        const cssButton = buttonGetPremio.style
+        cssButton.border = 'none'
+        cssButton.backgroundColor = '#45B8FF59'
+        cssButton.color = 'var(--white)'
+        cssButton.padding = '12px 30px'
+        cssButton.fontSize = '1.3rem'
+        cssButton.fontWeight = '500'
+        cssButton.fontFamily = "'League Spartan', sans-serif"
+        cssButton.borderRadius = '50px'
+        cssButton.border = 'solid 4px var(--white)'
+
         buttonGetPremio.addEventListener('click', () => {
             window.localStorage.setItem('ramones', 'desbloqueado')
 
             const messageAlert = document.createElement('span')
-            messageAlert.classList.add('messagem__alerta')
+            messageAlert.classList.add('mensagem__alerta')
 
             messageAlert.textContent = alternativasJSON[1].messageText
 
             const buttonBack = document.createElement('a')
             buttonBack.classList.add('alternativa')
+            buttonBack.id = 'button_back'
             buttonBack.href = '../pages/question05.html'
             buttonBack.textContent = 'voltar'
 
@@ -80,22 +96,44 @@ const myChem = function() {
     }
 
     else if (statusFones == 'ativado') {
+        const cssButton = buttonGetPremio.style
+        cssButton.border = 'none'
+        cssButton.backgroundColor = 'var(--blue)'
+        cssButton.color = 'var(--white)'
+        cssButton.padding = '12px 30px'
+        cssButton.fontSize = '1.3rem'
+        cssButton.fontWeight = '500'
+        cssButton.fontFamily = "'League Spartan', sans-serif"
+        cssButton.borderRadius = '50px'
+
         linkGetPremio.href = '../presente/for-my-mullberry.mp3'
         linkGetPremio.download = 'for-you'
     }
 }
 
 const ira = function() {
+    const premioContainer = document.getElementById('premio_container')
+
     const textCong = document.getElementById('congratulations_text')
     textCong.textContent = alternativasJSON[2].text
 
-    const imgPolaroid = document.getElementById('premio_container').style
-    imgPolaroid.height = '50px'
-    imgPolaroid.width = '240px'
-    imgPolaroid.background = `url(${alternativasJSON[2].img})`
-    imgPolaroid.backgroundSize = 'cover'
-    imgPolaroid.backgroundPosition = 'center'
-    imgPolaroid.backgroundRepeat = 'no-repeat'
+    const linkPlaylist = document.createElement('a')
+    linkPlaylist.href = 'https://open.spotify.com/playlist/6j8OT9nC5t0o4inzdXOMzM?si=1389c5694a7e4c39'
+    linkPlaylist.target = '_blank'
+
+    const imgPolaroid = document.createElement('div')
+    const cssPolaroid = imgPolaroid.style
+    cssPolaroid.height = '50px'
+    cssPolaroid.width = '240px'
+    cssPolaroid.borderRadius = '15px'
+    cssPolaroid.background = `url(${alternativasJSON[2].img})`
+    cssPolaroid.backgroundSize = 'cover'
+    cssPolaroid.backgroundPosition = 'center'
+    cssPolaroid.backgroundRepeat = 'no-repeat'
+
+    linkPlaylist.appendChild(imgPolaroid)
+
+    premioContainer.appendChild(linkPlaylist)
 }
 
 const ramones = function() {
@@ -105,12 +143,22 @@ const ramones = function() {
     const premioContainer = document.getElementById('premio_container')
 
     const message = document.createElement('span')
-    message.classList.add('messagem__desbloqueado')
+    message.classList.add('mensagem__desbloqueada')
     message.textContent = alternativasJSON[3].messageText
 
     const linkGetPremio = document.createElement('a')
     const buttonGetPremio = document.createElement('button')
     buttonGetPremio.textContent = alternativasJSON[3].buttonText
+
+    const cssButton = buttonGetPremio.style
+    cssButton.border = 'none'
+    cssButton.backgroundColor = 'var(--blue)'
+    cssButton.color = 'var(--white)'
+    cssButton.padding = '12px 30px'
+    cssButton.fontSize = '1.15rem'
+    cssButton.fontWeight = '500'
+    cssButton.fontFamily = "'League Spartan', sans-serif"
+    cssButton.borderRadius = '50px'
 
     linkGetPremio.appendChild(buttonGetPremio)
 

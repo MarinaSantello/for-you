@@ -1,9 +1,10 @@
 :root {
     --white: #FBFBFB;
     --bg-color: #170020;
-    --blue: #45B8FF;
+    --blue: #45b8ff;
     --green: #8DAC50;
     --purple: #613B6F;
+    --red: #DB382D;
 }
 
 * {

@@ -1,0 +1,102 @@
+.content__container {
+    padding: 15px 20px 0 20px;
+}
+
+.question__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3.5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--red);
+    background-color: var(--white);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: solid 4.2px;
+}
+
+.question,
+.congratulations__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 60%;
+}
+
+.pergunta {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.inputs__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputs__container div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.input__data {
+    height: 20px;
+    width: 23px;
+    text-align: center;
+    color: var(--bg-color);
+    background: linear-gradient(#613b6f34 75%, var(--purple) 25%);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.frase {
+    display: flex;
+    gap: 5px;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+#frases_Q03 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#frase2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.frase02 {
+    display: flex;
+    gap: 5px;
+}
+
+.frase input {
+    width: 80px;
+}
+
+.alternativas__container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.alternativa {
+    text-align: center;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--blue);
+    padding: 8px 40px;
+    border-radius: 50px;
+}

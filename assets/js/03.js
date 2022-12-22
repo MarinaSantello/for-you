@@ -77,28 +77,59 @@ const question03 = function() {
     const inputQ02 = document.getElementById('input_data')
 
     frasesJSON.forEach(element => {
-        const frase = document.createElement('div')
-        frase.classList.add('frase')
+        if (element.id == '02') {
+            const frase = document.createElement('div')
+            frase.classList.add('frase')
+            frase.id = 'frase2'
 
-        const label01 = document.createElement('label')
-        label01.classList.add('text__question')
-        label01.textContent = element.parte01
+            const frase02 = document.createElement('div')
+            frase02.classList.add('frase02')
+    
+            const label01 = document.createElement('label')
+            label01.classList.add('text__question')
+            label01.textContent = element.parte01
+    
+            const inputData = document.createElement('input')
+            inputData.classList.add('input__data')
+            inputData.id = `input_${element.id}`
+            inputData.type = 'text'
+            inputData.name = element.resposta
+    
+            const label02 = document.createElement('label')
+            label02.classList.add('text__question')
+            label02.textContent = element.parte02
+    
+            frase02.appendChild(label01)
+            frase02.appendChild(inputData)
+            frase.appendChild(frase02)
+            frase.appendChild(label02)
+    
+            frases.appendChild(frase)
+        }
+        else {
+            const frase = document.createElement('div')
+            frase.classList.add('frase')
 
-        const inputData = document.createElement('input')
-        inputData.classList.add('input__data')
-        inputData.id = `input_${element.id}`
-        inputData.type = 'text'
-        inputData.name = element.resposta
+            const label01 = document.createElement('label')
+            label01.classList.add('text__question')
+            label01.textContent = element.parte01
 
-        const label02 = document.createElement('label')
-        label02.classList.add('text__question')
-        label02.textContent = element.parte02
+            const inputData = document.createElement('input')
+            inputData.classList.add('input__data')
+            inputData.id = `input_${element.id}`
+            inputData.type = 'text'
+            inputData.name = element.resposta
 
-        frase.appendChild(label01)
-        frase.appendChild(inputData)
-        frase.appendChild(label02)
+            const label02 = document.createElement('label')
+            label02.classList.add('text__question')
+            label02.textContent = element.parte02
 
-        frases.appendChild(frase)
+            frase.appendChild(label01)
+            frase.appendChild(inputData)
+            frase.appendChild(label02)
+
+            frases.appendChild(frase)
+        }
     });
 
     respostas.replaceChild(frases, inputQ02)
