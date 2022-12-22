@@ -35,7 +35,7 @@ const newOrder = function() {
 
     const imgPolaroid = document.getElementById('premio_container').style
     imgPolaroid.height = '210px'
-    imgPolaroid.width = '220px'
+    imgPolaroid.width = '250px'
     imgPolaroid.background = `url(${alternativasJSON[0].img})`
     imgPolaroid.backgroundSize = 'cover'
     imgPolaroid.backgroundPosition = 'center'

@@ -48,11 +48,11 @@
 }
 
 .input__data {
-    height: 20px;
-    width: 23px;
+    height: 22px;
+    width: 25px;
     text-align: center;
     color: var(--bg-color);
-    background: linear-gradient(#613b6f34 75%, var(--purple) 25%);
+    background: linear-gradient(#613b6f34 80%, var(--purple) 20%);
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;

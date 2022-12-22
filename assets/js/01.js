@@ -3,34 +3,34 @@
 import { question02 } from "./02.js"
 
 const filmesJSON = [
-    // {
-    //     nome: 'Lightyear',
-    //     ordem: '3'
-    // },
-    // {
-    //     nome: 'Zack & Cody: O Filme',
-    //     ordem: '6'
-    // },
-    // {
-    //     nome: 'Minions',
-    //     ordem: '5'
-    // },
-    // {
-    //     nome: 'Uncharted: Fora do Mapa',
-    //     ordem: '1'
-    // },
-    // {
-    //     nome: 'Elvis',
-    //     ordem: '4'
-    // },
-    // {
-    //     nome: 'Donnie Darko',
-    //     ordem: '8'
-    // },
-    // {
-    //     nome: 'Como Treinar o seu Dragão 3',
-    //     ordem: '2'
-    // },
+    {
+        nome: 'Lightyear',
+        ordem: '3'
+    },
+    {
+        nome: 'Zack & Cody: O Filme',
+        ordem: '6'
+    },
+    {
+        nome: 'Minions',
+        ordem: '5'
+    },
+    {
+        nome: 'Uncharted: Fora do Mapa',
+        ordem: '1'
+    },
+    {
+        nome: 'Elvis',
+        ordem: '4'
+    },
+    {
+        nome: 'Donnie Darko',
+        ordem: '8'
+    },
+    {
+        nome: 'Como Treinar o seu Dragão 3',
+        ordem: '2'
+    },
     {
         nome: 'Space Jam: O Jogo do Século',
         ordem: '10'
