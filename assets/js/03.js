@@ -93,6 +93,7 @@ const question03 = function() {
             inputData.classList.add('input__data')
             inputData.id = `input_${element.id}`
             inputData.type = 'text'
+            inputData.autocomplete = 'off'
             inputData.name = element.resposta
     
             const label02 = document.createElement('label')
@@ -118,6 +119,7 @@ const question03 = function() {
             inputData.classList.add('input__data')
             inputData.id = `input_${element.id}`
             inputData.type = 'text'
+            inputData.autocomplete = 'off'
             inputData.name = element.resposta
 
             const label02 = document.createElement('label')

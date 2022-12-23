@@ -33,6 +33,7 @@ const question02 = function() {
     inputData.classList.add('input__data')
     inputData.id = 'input_data'
     inputData.type = 'text'
+    inputData.autocomplete = 'off'
     inputData.name = 'chapeuzinho'
 
     inputData.style.width = '100%'

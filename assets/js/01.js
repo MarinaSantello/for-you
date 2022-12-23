@@ -4,16 +4,12 @@ import { question02 } from "./02.js"
 
 const filmesJSON = [
     {
-        nome: 'Lightyear',
-        ordem: '3'
+        nome: 'Donnie Darko',
+        ordem: '8'
     },
     {
         nome: 'Zack & Cody: O Filme',
         ordem: '6'
-    },
-    {
-        nome: 'Minions',
-        ordem: '5'
     },
     {
         nome: 'Uncharted: Fora do Mapa',
@@ -24,16 +20,20 @@ const filmesJSON = [
         ordem: '4'
     },
     {
-        nome: 'Donnie Darko',
-        ordem: '8'
-    },
-    {
         nome: 'Como Treinar o seu Dragão 3',
         ordem: '2'
     },
     {
+        nome: 'Minions',
+        ordem: '5'
+    },
+    {
         nome: 'Space Jam: O Jogo do Século',
         ordem: '10'
+    },
+    {
+        nome: 'Lightyear',
+        ordem: '3'
     },
     {
         nome: 'O Iluminado',
@@ -46,6 +46,9 @@ const filmesJSON = [
 ]
 
 const question01 = function() {
+    const imgFooter = document.getElementById('footer_img')
+    imgFooter.style.opacity = '65%'
+
     const numQuestion = document.getElementById('question_number')
     numQuestion.textContent = '1'
 
@@ -63,6 +66,7 @@ const question01 = function() {
         const inputOrdem = document.createElement('input')
         inputOrdem.classList.add('input__data')
         inputOrdem.type = 'number'
+        inputOrdem.autocomplete = 'off'
         inputOrdem.name = element.ordem
         inputOrdem.id = `input_${element.ordem}`
     
