@@ -99,7 +99,7 @@ const handlekeypress = (event) => {
         });
 
         console.log(result)
-        if (result[1] == 2) {
+        if (result[9] == 10) {
             question02()
         }
         else {
