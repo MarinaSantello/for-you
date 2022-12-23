@@ -36,7 +36,7 @@ const question02 = function() {
     inputData.autocomplete = 'off'
     inputData.name = 'chapeuzinho'
 
-    inputData.style.width = '100%'
+    inputData.style.width = '65vw'
     inputData.style.height = '30px'
 
     const inputsQ01 = document.getElementById('inputs_container')

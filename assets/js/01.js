@@ -46,9 +46,6 @@ const filmesJSON = [
 ]
 
 const question01 = function() {
-    const imgFooter = document.getElementById('footer_img')
-    imgFooter.style.opacity = '65%'
-
     const numQuestion = document.getElementById('question_number')
     numQuestion.textContent = '1'
 
