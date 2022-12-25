@@ -24,7 +24,7 @@ const filmesJSON = [
         ordem: '2'
     },
     {
-        nome: 'Minions',
+        nome: 'Minions 2',
         ordem: '5'
     },
     {
